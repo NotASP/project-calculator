@@ -65,3 +65,7 @@ document.getElementById('.').addEventListener('click', function () {
 document.getElementById('delButton').addEventListener('click', function () {
     document.getElementById('inputField').value = ''
 });
+
+document.getElementById('backspaceButton').addEventListener('click', function () {
+    document.getElementById('inputField').value = document.getElementById('inputField').value.substring(0, document.getElementById('inputField').value.length - 1)
+});
